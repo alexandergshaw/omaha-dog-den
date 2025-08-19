@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional dog sitting services in Omaha. Trusted, caring, and reliable pet care for your furry friends.">
+    <title>Omaha Dog Den - Professional Dog Sitting Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Skip Navigation Link for Screen Readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Accessibility Dashboard -->
+    <div id="accessibility-dashboard" class="accessibility-dashboard" role="complementary" aria-label="Accessibility Metrics Dashboard">
+        <button id="accessibility-toggle" class="accessibility-toggle" aria-expanded="false" aria-controls="accessibility-panel">
+            <span class="visually-hidden">Toggle accessibility dashboard</span>
+            <span aria-hidden="true">♿</span>
+        </button>
+        <div id="accessibility-panel" class="accessibility-panel" hidden>
+            <h2>Accessibility Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Overall Score</h3>
+                    <div id="overall-score" class="score-display">--</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Color Contrast</h3>
+                    <div id="contrast-score" class="score-display">--</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Keyboard Navigation</h3>
+                    <div id="keyboard-score" class="score-display">--</div>
+                </div>
+                <div class="metric-card">
+                    <h3>ARIA Labels</h3>
+                    <div id="aria-score" class="score-display">--</div>
+                </div>
+            </div>
+            <div class="accessibility-tools">
+                <button id="run-audit" class="tool-button">Run Accessibility Audit</button>
+                <button id="test-keyboard" class="tool-button">Test Keyboard Navigation</button>
+                <button id="check-contrast" class="tool-button">Check Color Contrast</button>
+                <button id="simulate-screen-reader" class="tool-button">Simulate Screen Reader</button>
+            </div>
+            <div id="accessibility-report" class="accessibility-report" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>
+                        <a href="#" aria-label="Omaha Dog Den - Home">
+                            🐕 Omaha Dog Den
+                        </a>
+                    </h1>
+                </div>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                    <li role="none"><a href="#about" role="menuitem">About</a></li>
+                    <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h2 id="hero-heading">Professional Dog Sitting in Omaha</h2>
+                <p class="hero-description">
+                    Your furry friends deserve the best care while you're away. 
+                    We provide loving, professional dog sitting services in the comfort of your home.
+                </p>
+                <a href="#contact" class="cta-button" role="button" aria-describedby="cta-description">
+                    Book Dog Sitting Now
+                </a>
+                <div id="cta-description" class="visually-hidden">
+                    Navigate to contact form to book dog sitting services
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yMDAgMTUwQzIxMS4wNDYgMTUwIDIyMCAxNDEuMDQ2IDIyMCAxMzBDMjIwIDExOC45NTQgMjExLjA0NiAxMTAgMjAwIDExMEMxODguOTU0IDExMCAxODAgMTE4Ljk1NCAxODAgMTMwQzE4MCAxNDEuMDQ2IDE4OC45NTQgMTUwIDIwMCAxNTBaIiBmaWxsPSIjOUI3MzUzIi8+CjxwYXRoIGQ9Ik0xODAgMTcwQzE4MCA3MC0yMzAgMTIwIDIwMCAxNzBDNDMwIDEyMCAyMjAgNzAgMjIwIDE3MEMyMjAgMjIwIDIwMCAyNTAgMjAwIDI1MEM0MDAiIGZpbGw9IiM4QjczNTMiLz4KPC9zdmc+Cg==" 
+                     alt="Happy dog being cared for by professional dog sitter" 
+                     role="img"
+                     loading="lazy">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services</h2>
+                <div class="services-grid" role="list">
+                    <div class="service-card" role="listitem">
+                        <h3>In-Home Dog Sitting</h3>
+                        <p>Your dog stays comfortable in their familiar environment while receiving personalized care.</p>
+                        <ul aria-label="In-home sitting features">
+                            <li>Feeding and water refills</li>
+                            <li>Exercise and playtime</li>
+                            <li>Companionship and attention</li>
+                            <li>Basic grooming</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" role="listitem">
+                        <h3>Dog Walking</h3>
+                        <p>Regular walks to keep your dog healthy and happy throughout the day.</p>
+                        <ul aria-label="Dog walking features">
+                            <li>30-60 minute walks</li>
+                            <li>Flexible scheduling</li>
+                            <li>Weather protection gear</li>
+                            <li>Photo updates</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" role="listitem">
+                        <h3>Overnight Care</h3>
+                        <p>Comprehensive overnight care ensuring your dog is never alone.</p>
+                        <ul aria-label="Overnight care features">
+                            <li>24/7 supervision</li>
+                            <li>Emergency contact available</li>
+                            <li>Medication administration</li>
+                            <li>House security checks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Omaha Dog Den</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            With over 5 years of experience in professional dog care, we understand that your pets are family members who deserve the highest quality care and attention.
+                        </p>
+                        <p>
+                            Our team is fully insured, bonded, and trained in pet first aid. We provide regular updates and photos so you can have peace of mind while you're away.
+                        </p>
+                    </div>
+                    <div class="credentials" role="region" aria-labelledby="credentials-heading">
+                        <h3 id="credentials-heading">Our Credentials</h3>
+                        <ul>
+                            <li>Licensed and insured</li>
+                            <li>Pet first aid certified</li>
+                            <li>Background checked</li>
+                            <li>5+ years experience</li>
+                            <li>Local references available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <h2 id="testimonials-heading">What Pet Parents Say</h2>
+                <div class="testimonials-grid" role="list">
+                    <blockquote class="testimonial" role="listitem">
+                        <p>"Absolutely wonderful service! My dog Max was so happy and well-cared for. I received daily updates and photos that put me at ease during my vacation."</p>
+                        <cite>- Sarah Johnson</cite>
+                    </blockquote>
+                    <blockquote class="testimonial" role="listitem">
+                        <p>"Professional, reliable, and caring. They treated my golden retriever Luna like their own dog. Highly recommend!"</p>
+                        <cite>- Mike Chen</cite>
+                    </blockquote>
+                    <blockquote class="testimonial" role="listitem">
+                        <p>"The peace of mind knowing my senior dog was in good hands was priceless. Thank you for the excellent care!"</p>
+                        <cite>- Emily Rodriguez</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <address>
+                            <p>
+                                <strong>Phone:</strong> 
+                                <a href="tel:+14025551234" aria-label="Call us at 402-555-1234">(402) 555-1234</a>
+                            </p>
+                            <p>
+                                <strong>Email:</strong> 
+                                <a href="mailto:info@omahadogden.com" aria-label="Email us at info@omahadogden.com">info@omahadogden.com</a>
+                            </p>
+                            <p>
+                                <strong>Service Area:</strong> Omaha and surrounding areas
+                            </p>
+                        </address>
+                    </div>
+                    <form class="contact-form" role="form" aria-labelledby="contact-form-heading">
+                        <h3 id="contact-form-heading">Book a Consultation</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-error">
+                            <div id="name-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-error">
+                            <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" aria-describedby="phone-help">
+                            <div id="phone-help" class="form-help">We'll use this to contact you about your booking</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" aria-describedby="service-help">
+                                <option value="">Select a service</option>
+                                <option value="dog-sitting">In-Home Dog Sitting</option>
+                                <option value="dog-walking">Dog Walking</option>
+                                <option value="overnight">Overnight Care</option>
+                                <option value="consultation">Just a consultation</option>
+                            </select>
+                            <div id="service-help" class="form-help">Choose the service you're most interested in</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your dog(s) *</label>
+                            <textarea id="message" name="message" rows="4" required aria-required="true" 
+                                      placeholder="Dog's name, breed, age, special needs, etc." 
+                                      aria-describedby="message-error"></textarea>
+                            <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+                        <button type="submit" class="submit-button" aria-describedby="submit-help">Send Message</button>
+                        <div id="submit-help" class="form-help">We'll respond within 24 hours</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Omaha Dog Den</h3>
+                    <p>Professional dog sitting services you can trust.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: <a href="tel:+14025551234">(402) 555-1234</a></p>
+                    <p>Email: <a href="mailto:info@omahadogden.com">info@omahadogden.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Omaha Dog Den. All rights reserved.</p>
+                <p>
+                    <a href="#privacy">Privacy Policy</a> | 
+                    <a href="#terms">Terms of Service</a> | 
+                    <a href="#accessibility">Accessibility Statement</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="accessibility-metrics.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
